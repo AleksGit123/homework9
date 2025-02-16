@@ -21,16 +21,23 @@
     padding: 6px 82px;
 }
 
+.burger-menu {
+    display: none;
+    font-size: 32px;
+}
+
 .site-logo-link {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 175px;
     height: 38px;
+    /* gap: 14px; */
 }
 
 
 .site-logo {
+    /* width: 100%; */
     height: 100%;
 }
 
@@ -56,6 +63,14 @@
     gap: 32px;
 }
 
+.pages {
+    transition: 0.5s;
+}
+
+.pages:hover {
+    text-shadow: 0 5px 3px #FFFFFF;
+}
+
 .page-links {
     font-family: ABeeZee;
     font-weight: 400;
@@ -67,6 +82,7 @@
 
 .user {
     font-size: 24px;
+    cursor: pointer;
 }
 
 /* section1 */
@@ -115,10 +131,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
     flex-direction: column;
     background-color: #FA793C;
     gap: 34px;
-    padding: 34px 72px;
+    padding: 72px 82px;
 }
 
 .section2-header {
@@ -182,7 +199,7 @@
     align-items: center;
     justify-content: center;
     row-gap: 34px;
-    padding: 72px 62px;
+    padding: 72px 82px;
 }
 
 .section3-h2 {
@@ -201,7 +218,7 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 20px 40px;
+    gap: 40px 20px;
 
 }
 
@@ -209,17 +226,42 @@
     display: flex;
     flex-direction: column;
     max-width: 412px;
+    /* width: 412px; */
     flex: 1 1 32.2%;
     border: 2px solid #FA793C;
     border-radius: 8px;
     padding: 16px;
+    transition: .6s;
+}
+
+.card-div {
+    /* max-width: 380px; */
+    width: 100%;
+    height: 224px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 8px 8px 0 0;
+
+}
+
+/* card hover effects  */
+
+.section3-article:hover {
+    box-shadow: 0 0 10px #ff5722,
+        0 0 20px #ff5722,
+        0 0 30px #ff5722;
+    transform: translateY(-8px);
+}
+
+.section3-article:hover img {
+    transform: scale(1.1);
 }
 
 .section3 img {
-    width: 100%;
-    height: 224px;
+    width: inherit;
+    height: 100%;
     object-fit: cover;
-    margin-bottom: 16px;
+    transition: .6s;
 }
 
 .price-section {
@@ -235,6 +277,7 @@
     line-height: 19.36px;
     letter-spacing: 0%;
     color: #FA793C;
+    margin-top: 16px;
 }
 
 .buy-section {
@@ -303,6 +346,9 @@
 }
 
 /* footer nav  */
+.index-footer {
+    display: flex;
+}
 
 .social-link-list {
     display: flex;
@@ -334,6 +380,7 @@
 
 .contact-icon {
     font-size: 18px;
+    margin-right: 16px;
 }
 
 .contact-links {

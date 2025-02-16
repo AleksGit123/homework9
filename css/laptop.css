@@ -1,1 +1,10 @@
 /* 1439px-769px */
+
+@media (max-width:1300px) {
+
+
+    .section3-article:nth-last-child(-n+3) {
+        display: none;
+    }
+
+}

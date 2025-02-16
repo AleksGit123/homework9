@@ -37,6 +37,11 @@
 
     <link rel="stylesheet" href="css/style.css">
 
+    <!-- responsive css links -->
+    <link rel="stylesheet" href="css/laptop.css">
+    <link rel="stylesheet" href="css/tablet.css">
+    <link rel="stylesheet" href="css/mobile.css">
+
     <link rel="shortcut icon" href="images/header-logo.svg" type="image/x-icon">
     <title>Home Page</title>
 </head>
@@ -48,13 +53,19 @@
 
         <header class="index-header">
 
+            <i class="fa-solid fa-bars burger-menu" style="color: #ffffff;"></i>
+
             <a href="index.html" class="site-logo-link">
+
                 <img src="images/header-logo.svg" alt="main site logo" class="site-logo">
+
                 <span class="header-span">
                     Travel Day.com
                 </span>
 
             </a>
+
+
 
             <section class="header-section">
 
@@ -62,25 +73,25 @@
 
                     <ul class="page-link-list">
 
-                        <li>
+                        <li class="pages">
                             <a href="index.html" class="page-links">
                                 Home
                             </a>
                         </li>
 
-                        <li>
+                        <li class="pages">
                             <a href="" class="page-links">
                                 Discover
                             </a>
                         </li>
 
-                        <li>
+                        <li class="pages">
                             <a href="" class="page-links">
                                 Photo
                             </a>
                         </li>
 
-                        <li>
+                        <li class="pages">
                             <a href="" class="page-links">
                                 Contact
                             </a>
@@ -191,7 +202,10 @@
 
                 <article class="section3-article">
 
-                    <img src="images/section3/book1.png" alt="card image 1">
+                    <div class="card-div">
+                        <img src="images/section3/book1.png" alt="card image 1">
+                    </div>
+
 
                     <section class="price-section">
                         <h3 class="tour-name">Tour Name</h3>
@@ -214,8 +228,10 @@
                 <!-- article 2 -->
 
                 <article class="section3-article">
+                    <div class="card-div">
+                        <img src="images/section3/book2.png" alt="card image 2">
+                    </div>
 
-                    <img src="images/section3/book2.png" alt="card image 2">
 
                     <section class="price-section">
 
@@ -241,8 +257,10 @@
                 <!-- article 3 -->
 
                 <article class="section3-article">
+                    <div class="card-div">
+                        <img src="images/section3/book3.png" alt="card image 3">
+                    </div>
 
-                    <img src="images/section3/book3.png" alt="card image 3">
 
                     <section class="price-section">
                         <h3 class="tour-name">Tour Name</h3>
@@ -268,8 +286,10 @@
                 <!-- article 4 -->
 
                 <article class="section3-article">
+                    <div class="card-div">
+                        <img src="images/section3/book4.png" alt="card image 4">
+                    </div>
 
-                    <img src="images/section3/book4.png" alt="card image 4">
 
                     <section class="price-section">
 
@@ -295,8 +315,10 @@
                 <!-- article 5 -->
 
                 <article class="section3-article">
+                    <div class="card-div">
+                        <img src="images/section3/book5.png" alt="card image 5">
+                    </div>
 
-                    <img src="images/section3/book5.png" alt="card image 5">
 
                     <section class="price-section">
 
@@ -322,8 +344,10 @@
                 <!-- article 6 -->
 
                 <article class="section3-article">
+                    <div class="card-div">
+                        <img src="images/section3/book6.png" alt="card image 6">
+                    </div>
 
-                    <img src="images/section3/book6.png" alt="card image 6">
 
                     <section class="price-section">
 
@@ -349,7 +373,10 @@
                 <!-- article 7 -->
 
                 <article class="section3-article">
-                    <img src="images/section3/book7.png" alt="card image 7">
+                    <div class="card-div">
+                        <img src="images/section3/book7.png" alt="card image 7">
+                    </div>
+
 
                     <section class="price-section">
                         <h3 class="tour-name">Tour Name</h3>
@@ -374,8 +401,10 @@
                 <!-- article 8 -->
 
                 <article class="section3-article">
+                    <div class="card-div">
+                        <img src="images/section3/book8.png" alt="card image 8">
+                    </div>
 
-                    <img src="images/section3/book8.png" alt="card image 8">
 
                     <section class="price-section">
 
@@ -402,8 +431,10 @@
                 <!-- article 9 -->
 
                 <article class="section3-article">
+                    <div class="card-div">
+                        <img src="images/section3/book9.png" alt="card image 9">
+                    </div>
 
-                    <img src="images/section3/book9.png" alt="card image 9">
 
                     <section class="price-section">
 
@@ -431,6 +462,8 @@
 
 
         </section>
+
+        <!-- footer -->
 
         <footer class="index-footer">
 
@@ -492,6 +525,7 @@
 
             <a href="index.html" class="site-logo-link">
                 <img src="images/header-logo.svg" alt="main site logo" class="site-logo">
+
                 <span class="header-span">
                     Travel Day.com
                 </span>
@@ -501,25 +535,32 @@
             <nav class="contact-nav">
                 <ul class="contact-list">
                     <li>
-                        <i class="fa-solid fa-phone fa-sm contact-icon" style="color: #ffffff;"></i>
+
 
                         <a href="tel:+123 45 67 89" class="contact-links">
-                            +123 45 67 89
+                            <i class="fa-solid fa-phone fa-sm contact-icon" style="color: #ffffff;"></i>
+                            <span>+123 45 67 89</span>
+
                         </a>
                     </li>
                     <li>
-                        <i class="fa-regular fa-envelope contact-icon" style="color: #ffffff;"></i>
+
 
                         <a href="mailto:example@mail.com" target="_blank" class="contact-links">
-                            example@mail.com
+                            <i class="fa-regular fa-envelope contact-icon" style="color: #ffffff;"></i>
+                            <span>example@mail.com</span>
+
                         </a>
                     </li>
                     <li>
-                        <i class="fa-solid fa-location-dot contact-icon" style="color: #ffffff;"></i>
+
 
                         <a href="https://www.google.com/maps/place/30+Shota+Rustaveli+Ave,+T'bilisi/@41.700852,44.7919997,17z/data=!3m1!4b1!4m6!3m5!1s0x40440cdd1af7ece7:0xa0647da208fff81e!8m2!3d41.700852!4d44.7945746!16s%2Fg%2F11g_7kst5?entry=ttu&g_ep=EgoyMDI1MDIxMi4wIKXMDSoASAFQAw%3D%3D"
                             target="_blank" class="contact-links">
-                            Rustaveli avenue, 30
+                            <i class="fa-solid fa-location-dot contact-icon" style="color: #ffffff;"></i>
+
+                            <span>Rustaveli avenue, 30</span>
+
                         </a>
                     </li>
                 </ul>

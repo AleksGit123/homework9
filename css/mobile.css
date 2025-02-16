@@ -1,1 +1,18 @@
 /* 480px-320px */
+
+@media (max-width:376px) {
+
+    /* header  */
+
+    .index-header {
+        padding-inline: 14px;
+    }
+
+    .sectoin3 {
+        padding-inline: 14px;
+    }
+
+    .index-footer {
+        padding-inline: 107px;
+    }
+}
