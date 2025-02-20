@@ -1,11 +1,20 @@
 /* 768px-481px */
+@media (max-width:834px) {
+    .index-header {
+        padding-inline: 46px;
+    }
 
-@media (max-width:711px) {
+    .section1 {
+        height: 438px;
+    }
+}
+
+
+@media (max-width:710px) {
 
     /* header  */
 
     .index-header {
-        justify-content: center;
         padding-inline: 38px;
         gap: 58px;
 
@@ -14,6 +23,7 @@
     .header-section {
         width: 32px;
         height: 32px;
+
     }
 
     .burger-menu {
@@ -22,6 +32,23 @@
 
     .header-nav {
         display: none;
+    }
+
+    /* section1 */
+    .section1 {
+        row-gap: 24px;
+    }
+
+    .section1-text {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .section1-but {
+        width: 170px;
+        height: 50px;
+        font-size: 20px;
+        line-height: 28px;
     }
 
     /* section3  */

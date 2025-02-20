@@ -2,6 +2,9 @@
 
 @media (max-width:1300px) {
 
+    .index-header {
+        padding-inline: 57px;
+    }
 
     .section3-article:nth-last-child(-n+3) {
         display: none;
